@@ -1,0 +1,163 @@
+
+body {
+    overflow-x: hidden;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: red;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTs_DIi41Zm3EGMJeWfcPO8M4-_m2BUp31Tkw&s);
+}
+.allcars{
+    font-size: xx-large;
+    z-index: 10;
+   animation-name: allcars;
+   animation-duration: 7s;
+   animation-timing-function: ease-out;
+   animation-iteration-count: infinite;
+   position: relative;
+   color: red; 
+}
+
+.allcarsmoving{
+    position: absolute;
+    margin-top: -55px;
+}
+
+
+
+    @keyframes allcars {
+    50%{
+        left: -1000px;
+    }
+    100%{
+        left: 1300px;
+    }
+}
+.container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 5px;
+    background-color: black;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    color: red;
+}
+.container h1 {
+    text-align: center;
+    color: #1E88E5;
+    margin-bottom: 20px;
+}
+.logo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.logo img {
+    max-width: 400px;
+    border-radius: 50%;
+}
+.form-section {
+    margin-bottom: 5px;
+}
+.form-section h2 {
+    margin-bottom: 5px;
+    color: #b20238;
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+    position: relative;
+    left: 40%;
+    font-size: 23px;
+}
+.form-section > h2 {
+    padding: 3px;
+    width: 150px;
+    box-shadow: 5px 5px 10px darkblue;
+    cursor: pointer;
+    border-radius: 15px;
+    text-align: center;
+    scale: 0.8;
+    transition: 0.9s;
+    
+}
+.form-section{
+    display: block;
+    background-color: black;
+    box-shadow: 5px 5px 10px darkblue;
+    padding: 1px;
+    border-radius: 5% / 15%;
+}
+.form-section > h2:hover {
+    scale: 1;
+    background-color: #e75874;
+    color: wheat;
+}
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: white;
+    font-size: larger;
+}
+input[type="text"], input[type="email"], textarea, select, input[type="file"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    background-color: black;
+    color: #e0e0e0;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+}
+input[type="text"]:focus, input[type="email"]:focus, textarea:focus, select:focus {
+    border-color: #1E88E5;
+    outline: none;
+}
+input[type="submit"] {
+    background-color: #1E88E5;
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+    transition: background-color 0.3s;
+}
+input[type="submit"]:hover {
+    background-color: #1565C0;
+}
+.alternate-input {
+    text-align: center;
+    margin: 15px 0;
+    color: #999;
+}
+.alternate-input span {
+    margin: 0 10px;
+}
+.results {
+    margin-top: 20px;
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 10px;
+    color: #e0e0e0;
+    font-weight: bold;
+    white-space: pre-line;
+}
+.containers{
+    height: 30vh;
+    width: 30vw;
+    position: absolute;
+    top: 25vh;
+    left: 20vw;
+    transform: translate(-50%, -50%);
+    perspective: 1000px;
+    text-shadow: 0px 2px 5px yellow, 0px -5px 5px red;
+    
+}
+.jeffsms{
+    width: 100px;
+    height: 100px;
+}
+
