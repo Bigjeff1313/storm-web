@@ -1,12 +1,3 @@
-<?php
-session_start();
-
-if (!isset($_SESSION['username'])) {
-    header("Location: login.php");
-    exit();
-}
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -77,7 +68,7 @@ if (!isset($_SESSION['username'])) {
     <div class="container">
         <div class="card">
             <div class="card-header">
-                <h2>Welcome, <?php echo htmlspecialchars($_SESSION['username']); ?>!</h2>
+                <h2>Welcome, User!</h2> <!-- Replace "User" with the actual username -->
             </div>
             <div class="card-body">
                 <p class="card-text">You have successfully logged in to the STORM-WEB-SENDER.</p>
